@@ -1,0 +1,9 @@
+# python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+*.pt
+*.json
+*.npy
