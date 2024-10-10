@@ -81,8 +81,7 @@ Please consider citing our paper if you think our codes, data, or models are use
 ```
 @inproceedings{li-zhou-2024-moee,
     title = "MoE Embeddings: Sparser Mixture-of-Adapters with Cross-Layer Generalization",
-    author = "Li, Ziyue and
-      Zhou, Tianyi",
+    author = "Li, Ziyue and Zhou, Tianyi",
     booktitle = "ArXiv preprint",
     year = "2024",
 }
