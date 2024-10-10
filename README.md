@@ -1,4 +1,4 @@
-# MoE Embeddings: Exploring Mixture of Experts for Large Language Model Embeddings
+# MoE Embeddings: Sparser Mixture-of-Adapters with Cross-Layer Generalization
 
 ## Abstract
 While large language models (LLMs) excel on generation tasks, their decoder-only architecture often limits their potential as embedding models if no further representation finetuning is applied. Does this contradict their claim of generalists? To answer the question, we take a closer look at Mixture-of-Experts (MoE) LLMs. Our study shows that the expert routers in MoE LLMs can serve as an off-the-shelf embedding model with promising performance on a diverse class of embedding-focused tasks, without requiring any finetuning. Moreover, our extensive analysis shows that the MoE routing weights (RW) is complementary to the hidden state (HS) of LLMs, a widely-used embedding. Compared to HS, we find that RW is more robust to the choice of prompts and focuses on high-level semantics. Motivated by the analysis, we propose MoEE, combining RW and HS, which achieves better performance than using either separately. Our exploration of their combination and prompting strategy sheds several novel insights, e.g., a weighted sum of RW and HS similarities outperforms the similarity on their concatenation. Our experiments are conducted on 6 embedding tasks with 20 datasets from the Massive Text Embedding Benchmark (MTEB). The results demonstrate the significant improvement brought by MoEE to LLM-based embedding without further finetuning. 
@@ -73,3 +73,17 @@ python eval_mteb.py \
         - `'none'`: No specific prompting is applied. The embeddings are extracted directly from the model without any additional text input modifications.
         - `'prompteol'`: Use a prompt strategy where an end-of-line token or phrase is added to influence the model's generation of embeddings. This can help capture certain high-level features.
         - `'customized prompts'`: You can define your own prompts to tailor the embedding generation. This provides more flexibility for specific tasks where certain prompts can better guide the model's focus.
+
+## Citation
+
+Please consider citing our paper if you think our codes, data, or models are useful. Thank you! <br>
+
+```
+@inproceedings{li-zhou-2024-moee,
+    title = "MoE Embeddings: Sparser Mixture-of-Adapters with Cross-Layer Generalization",
+    author = "Li, Ziyue and
+      Zhou, Tianyi",
+    booktitle = "ArXiv preprint",
+    year = "2024",
+}
+```
