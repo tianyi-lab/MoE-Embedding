@@ -80,9 +80,9 @@ Please consider citing our paper if you think our codes, data, or models are use
 
 ```
 @inproceedings{li-zhou-2024-moee,
-    title = "MoE Embeddings: Sparser Mixture-of-Adapters with Cross-Layer Generalization",
+    title = "Your Mixture-of-Experts LLM Is Secretly an Embedding Model For Free",
     author = "Li, Ziyue and Zhou, Tianyi",
-    booktitle = "ArXiv preprint",
+    booktitle = "arXiv:2410.10814",
     year = "2024",
 }
 ```
